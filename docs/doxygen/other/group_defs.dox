@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio OUTERNET C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the OUTERNET GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+
