@@ -26,6 +26,7 @@ include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND outernet_sources
+    descrambler308_impl.cc
 )
 
 set(outernet_sources "${outernet_sources}" PARENT_SCOPE)
@@ -72,7 +73,7 @@ target_link_libraries(
   gnuradio-outernet
 )
 
-GR_ADD_TEST(test_outernet test-outernet)
+#GR_ADD_TEST(test_outernet test-outernet)
 
 ########################################################################
 # Print summary

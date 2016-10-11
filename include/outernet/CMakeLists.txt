@@ -22,5 +22,5 @@
 ########################################################################
 install(FILES
     api.h
-    DESTINATION include/outernet
+    descrambler308.h DESTINATION include/outernet
 )

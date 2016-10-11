@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<block>
+  <name>IESS-308 descrambler</name>
+  <key>outernet_descrambler308</key>
+  <category>[outernet]</category>
+  <import>import outernet</import>
+  <make>outernet.descrambler308()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>
