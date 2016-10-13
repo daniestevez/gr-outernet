@@ -155,7 +155,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>1</value>
+      <value>0.1</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -206,7 +206,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>tab@0</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -303,7 +303,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>625000/50</value>
+      <value>48000</value>
     </param>
   </block>
   <block>
@@ -527,7 +527,11 @@
     </param>
   </block>
   <block>
-    <key>blocks_float_to_complex</key>
+    <key>blocks_file_sink</key>
+    <param>
+      <key>append</key>
+      <value>False</value>
+    </param>
     <param>
       <key>alias</key>
       <value></value>
@@ -545,8 +549,12 @@
       <value>True</value>
     </param>
     <param>
+      <key>file</key>
+      <value>/home/daniel/outernet.bin</value>
+    </param>
+    <param>
       <key>_coordinate</key>
-      <value>(232, 184)</value>
+      <value>(1048, 572)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -554,15 +562,15 @@
     </param>
     <param>
       <key>id</key>
-      <value>blocks_float_to_complex_0</value>
+      <value>blocks_file_sink_0</value>
     </param>
     <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
+      <key>type</key>
+      <value>byte</value>
     </param>
     <param>
-      <key>minoutbuf</key>
-      <value>0</value>
+      <key>unbuffered</key>
+      <value>False</value>
     </param>
     <param>
       <key>vlen</key>
@@ -604,7 +612,7 @@
     <key>blocks_packed_to_unpacked_xx</key>
     <param>
       <key>bits_per_chunk</key>
-      <value>8</value>
+      <value>1</value>
     </param>
     <param>
       <key>alias</key>
@@ -659,7 +667,7 @@
     <key>blocks_packed_to_unpacked_xx</key>
     <param>
       <key>bits_per_chunk</key>
-      <value>8</value>
+      <value>1</value>
     </param>
     <param>
       <key>alias</key>
@@ -754,7 +762,7 @@
     </param>
     <param>
       <key>samples_per_second</key>
-      <value>625000*10</value>
+      <value>48000*3</value>
     </param>
     <param>
       <key>type</key>
@@ -781,11 +789,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>file</key>
-      <value>/home/daniel/Descargas/2016-10-09--outernet--k4kdr--airspy.wav</value>
+      <value>/home/daniel/gr-outernet/examples/20161006.wav</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -809,62 +817,11 @@
     </param>
     <param>
       <key>nchan</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>repeat</key>
-      <value>True</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_wavfile_source</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
       <value>1</value>
     </param>
     <param>
-      <key>file</key>
-      <value>/tmp/outernet.wav</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(16, 88)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_wavfile_source_1</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>nchan</key>
-      <value>2</value>
-    </param>
-    <param>
       <key>repeat</key>
-      <value>True</value>
+      <value>False</value>
     </param>
   </block>
   <block>
@@ -1076,6 +1033,123 @@
     </param>
   </block>
   <block>
+    <key>ec_invert_bit_values_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(408, 816)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>ec_invert_bit_values_bb_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>ec_invert_bit_values_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(288, 648)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>ec_invert_bit_values_bb_0_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>ec_invert_bit_values_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(704, 912)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>ec_invert_bit_values_bb_1</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
     <key>fec_decode_ccsds_27_fb</key>
     <param>
       <key>alias</key>
@@ -1161,7 +1235,7 @@
     </param>
     <param>
       <key>center_freq</key>
-      <value>3500</value>
+      <value>3000</value>
     </param>
     <param>
       <key>comment</key>
@@ -1173,7 +1247,7 @@
     </param>
     <param>
       <key>decim</key>
-      <value>50</value>
+      <value>1</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1181,7 +1255,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(576, 200)</value>
+      <value>(592, 200)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1201,15 +1275,66 @@
     </param>
     <param>
       <key>samp_rate</key>
-      <value>625000</value>
+      <value>48000</value>
     </param>
     <param>
       <key>taps</key>
-      <value>firdes.low_pass(1, 625000, 2200, 500)</value>
+      <value>firdes.low_pass(1, 48000, 2400, 500)</value>
     </param>
     <param>
       <key>type</key>
       <value>ccc</value>
+    </param>
+  </block>
+  <block>
+    <key>hilbert_fc</key>
+    <param>
+      <key>beta</key>
+      <value>6.76</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(224, 188)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>hilbert_fc_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_taps</key>
+      <value>65</value>
+    </param>
+    <param>
+      <key>win</key>
+      <value>firdes.WIN_HAMMING</value>
     </param>
   </block>
   <block>
@@ -1236,7 +1361,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(568, 720)</value>
+      <value>(608, 708)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1283,7 +1408,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(592, 948)</value>
+      <value>(656, 956)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1326,7 +1451,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(336, 648)</value>
+      <value>(464, 648)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1365,7 +1490,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(560, 864)</value>
+      <value>(608, 840)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2512,7 +2637,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -2672,11 +2797,11 @@
     </param>
     <param>
       <key>ncols</key>
-      <value>300</value>
+      <value>2*(4*300+10)-1</value>
     </param>
     <param>
       <key>nrows</key>
-      <value>300</value>
+      <value>150</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -2719,11 +2844,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(960, 716)</value>
+      <value>(1048, 716)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2879,11 +3004,11 @@
     </param>
     <param>
       <key>ncols</key>
-      <value>300</value>
+      <value>2*(1200+10)-1</value>
     </param>
     <param>
       <key>nrows</key>
-      <value>300</value>
+      <value>150</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -3876,12 +4001,6 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_float_to_complex_0</source_block_id>
-    <sink_block_id>blocks_throttle_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>blocks_packed_to_unpacked_xx_0</source_block_id>
     <sink_block_id>digital_diff_decoder_bb_0</sink_block_id>
     <source_key>0</source_key>
@@ -3901,27 +4020,9 @@
   </connection>
   <connection>
     <source_block_id>blocks_wavfile_source_0</source_block_id>
-    <sink_block_id>blocks_float_to_complex_0</sink_block_id>
+    <sink_block_id>hilbert_fc_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_wavfile_source_0</source_block_id>
-    <sink_block_id>blocks_float_to_complex_0</sink_block_id>
-    <source_key>1</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_wavfile_source_1</source_block_id>
-    <sink_block_id>blocks_float_to_complex_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_wavfile_source_1</source_block_id>
-    <sink_block_id>blocks_float_to_complex_0</sink_block_id>
-    <source_key>1</source_key>
-    <sink_key>1</sink_key>
   </connection>
   <connection>
     <source_block_id>digital_costas_loop_cc_0</source_block_id>
@@ -3943,13 +4044,13 @@
   </connection>
   <connection>
     <source_block_id>digital_diff_decoder_bb_0</source_block_id>
-    <sink_block_id>outernet_descrambler308_0</sink_block_id>
+    <sink_block_id>ec_invert_bit_values_bb_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>digital_diff_decoder_bb_0_0</source_block_id>
-    <sink_block_id>outernet_descrambler308_0_0</sink_block_id>
+    <sink_block_id>ec_invert_bit_values_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3976,6 +4077,30 @@
     <sink_block_id>qtgui_number_sink_0</sink_block_id>
     <source_key>2</source_key>
     <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>ec_invert_bit_values_bb_0</source_block_id>
+    <sink_block_id>outernet_descrambler308_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>ec_invert_bit_values_bb_0_0</source_block_id>
+    <sink_block_id>outernet_descrambler308_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>ec_invert_bit_values_bb_1</source_block_id>
+    <sink_block_id>kiss_hdlc_deframer_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>ec_invert_bit_values_bb_1</source_block_id>
+    <sink_block_id>qtgui_time_raster_sink_x_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>fec_decode_ccsds_27_fb_0</source_block_id>
@@ -4014,6 +4139,12 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>hilbert_fc_0</source_block_id>
+    <sink_block_id>blocks_throttle_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>kiss_hdlc_deframer_0</source_block_id>
     <sink_block_id>blocks_message_debug_0</sink_block_id>
     <source_key>out</source_key>
@@ -4024,6 +4155,12 @@
     <sink_block_id>blocks_message_debug_0</sink_block_id>
     <source_key>out</source_key>
     <sink_key>print_pdu</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>outernet_descrambler308_0</source_block_id>
+    <sink_block_id>blocks_file_sink_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>outernet_descrambler308_0</source_block_id>
@@ -4039,13 +4176,7 @@
   </connection>
   <connection>
     <source_block_id>outernet_descrambler308_0_0</source_block_id>
-    <sink_block_id>kiss_hdlc_deframer_0_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>outernet_descrambler308_0_0</source_block_id>
-    <sink_block_id>qtgui_time_raster_sink_x_0_0</sink_block_id>
+    <sink_block_id>ec_invert_bit_values_bb_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
