@@ -10,6 +10,7 @@
 %{
 #include "outernet/descrambler308.h"
 #include "outernet/swap_ff.h"
+#include "outernet/invert_bit.h"
 %}
 
 
@@ -17,3 +18,5 @@
 GR_SWIG_BLOCK_MAGIC2(outernet, descrambler308);
 %include "outernet/swap_ff.h"
 GR_SWIG_BLOCK_MAGIC2(outernet, swap_ff);
+%include "outernet/invert_bit.h"
+GR_SWIG_BLOCK_MAGIC2(outernet, invert_bit);

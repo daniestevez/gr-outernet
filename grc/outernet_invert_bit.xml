@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<block>
+  <name>Invert bit</name>
+  <key>outernet_invert_bit</key>
+  <category>[outernet]</category>
+  <import>import outernet</import>
+  <make>outernet.invert_bit()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

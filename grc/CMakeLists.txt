@@ -19,5 +19,6 @@
 
 install(FILES
     outernet_descrambler308.xml
-    outernet_swap_ff.xml DESTINATION share/gnuradio/grc/blocks
+    outernet_swap_ff.xml
+    outernet_invert_bit.xml DESTINATION share/gnuradio/grc/blocks
 )

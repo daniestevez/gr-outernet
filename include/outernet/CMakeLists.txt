@@ -23,5 +23,6 @@
 install(FILES
     api.h
     descrambler308.h
-    swap_ff.h DESTINATION include/outernet
+    swap_ff.h
+    invert_bit.h DESTINATION include/outernet
 )
