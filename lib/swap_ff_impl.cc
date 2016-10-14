@@ -63,7 +63,7 @@ namespace gr {
 
       assert(noutput_items % 2 == 0);
 
-      for (int = 0; i < noutput_items; i += 2) {
+      for (int i = 0; i < noutput_items; i += 2) {
 	out[i] = in[i+1];
 	out[i+1] = in[i];
       }
