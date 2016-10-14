@@ -113,7 +113,7 @@
     </param>
     <param>
       <key>label</key>
-      <value></value>
+      <value>RRC filter alpha</value>
     </param>
     <param>
       <key>type</key>
@@ -194,7 +194,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>tab@0</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -206,11 +206,50 @@
     </param>
     <param>
       <key>label</key>
-      <value></value>
+      <value>Filter cutoff frequency (Hz)</value>
     </param>
     <param>
       <key>type</key>
       <value>real</value>
+    </param>
+  </block>
+  <block>
+    <key>variable_qtgui_entry</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(16, 252)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value>tab@0</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>fine_tune</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Fine tune (Hz)</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>int</value>
     </param>
   </block>
   <block>
@@ -272,7 +311,7 @@
     </param>
     <param>
       <key>label</key>
-      <value></value>
+      <value>Polyphase loop bandwidth</value>
     </param>
     <param>
       <key>type</key>
@@ -311,7 +350,7 @@
     </param>
     <param>
       <key>label</key>
-      <value></value>
+      <value>Polyphase maximum freq deviation</value>
     </param>
     <param>
       <key>type</key>
@@ -419,7 +458,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>tab@0</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -431,7 +470,7 @@
     </param>
     <param>
       <key>label</key>
-      <value></value>
+      <value>Filter transition width (Hz)</value>
     </param>
     <param>
       <key>type</key>
@@ -1167,7 +1206,7 @@
     </param>
     <param>
       <key>center_freq</key>
-      <value>freq-centre_freq</value>
+      <value>freq-centre_freq+fine_tune</value>
     </param>
     <param>
       <key>comment</key>
@@ -1211,7 +1250,7 @@
     </param>
     <param>
       <key>taps</key>
-      <value>firdes.low_pass(1, 2400000, 20000, 2000)</value>
+      <value>firdes.low_pass(1, 2400000, 20000, 4000)</value>
     </param>
     <param>
       <key>type</key>
