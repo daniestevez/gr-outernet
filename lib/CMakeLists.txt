@@ -27,6 +27,7 @@ link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND outernet_sources
     descrambler308_impl.cc
+    swap_ff_impl.cc
 )
 
 set(outernet_sources "${outernet_sources}" PARENT_SCOPE)

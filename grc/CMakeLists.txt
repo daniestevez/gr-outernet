@@ -18,5 +18,6 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    outernet_descrambler308.xml DESTINATION share/gnuradio/grc/blocks
+    outernet_descrambler308.xml
+    outernet_swap_ff.xml DESTINATION share/gnuradio/grc/blocks
 )

@@ -9,8 +9,11 @@
 
 %{
 #include "outernet/descrambler308.h"
+#include "outernet/swap_ff.h"
 %}
 
 
 %include "outernet/descrambler308.h"
 GR_SWIG_BLOCK_MAGIC2(outernet, descrambler308);
+%include "outernet/swap_ff.h"
+GR_SWIG_BLOCK_MAGIC2(outernet, swap_ff);
