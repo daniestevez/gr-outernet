@@ -3,18 +3,15 @@ GNUradio OOT module for Outernet
 
 This repository contains a GNUradio decoder for [Outernet](http://outernet.is/)
 
-The decoder only receives the Outernet frames from the L-band signal. To do
-something useful with the frames, additional software is needed. There will be a
-small tool to input the frames into the Outernet `ondd` daemon, which does the
-appropriate thing (reassemble files and so on). Note that `ondd` is
-closed-source and the details of the format of the frames are not publicly
-known. Perhaps some day we will be able to program an open-source substitute for
-`ondd`, but for now we need to do more reverse-engineering.
+The decoder receives the Outernet frames from the L-band signal. You can use
+[free-outernet](https://github.com/daniestevez/free-outernet/) to recover files
+from the frames.
 
 The most useful GRC flowgraph is `examples/outernet-rtlsdr.grc`. This flowgraph
 receives the Outernet L-band signal and saves the frame to a KISS file in
-`/tmp/outernet.kiss`. It also sends the frames by UDP. This will be used in the
-future to inject the frames into `ondd` or other software.
+`/tmp/outernet.kiss`. It also sends the frames by UDP. This will be used in a
+future version of free-outernet to do realtime file reception (for now it only
+works with the KISS file).
 
 The flowgraph is preset for the I-4 F3 signal that is used in the Americas. If
 you are on another area, please change the variables `freq` and `centre_freq` in
