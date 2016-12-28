@@ -32,3 +32,8 @@ will possibly result in bit errors). If you get improved results with some
 combination of parameters other than the stock one, please let me know.
 
 The flowgraph needs [gr-kiss](https://github.com/daniestevez/gr-kiss/).
+
+## Sample IQ recording
+
+For testing, you can use a [sample IQ recording by Scott K4KDR](https://drive.google.com/open?id=0B2pPGQkeEAfdRjV0a1IyNTBIalk).
+You should open it with the flowgraph `examples/outernet-recording-example.grc`
