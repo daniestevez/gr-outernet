@@ -1,7 +1,7 @@
 # gr-outernet
-GNUradio OOT module for Outernet
+GNU Radio OOT module for Outernet
 
-This repository contains a GNUradio decoder for [Outernet](http://outernet.is/)
+This repository contains a GNU Radio decoder for [Outernet](http://outernet.is/)
 
 The decoder receives the Outernet frames from the L-band signal. You can use
 [free-outernet](https://github.com/daniestevez/free-outernet/) to recover files
@@ -37,3 +37,28 @@ The flowgraph needs [gr-kiss](https://github.com/daniestevez/gr-kiss/).
 
 For testing, you can use a [sample IQ recording by Scott K4KDR](https://drive.google.com/open?id=0B2pPGQkeEAfdRjV0a1IyNTBIalk).
 You should open it with the flowgraph `examples/outernet-recording-example.grc`
+
+## Note about SWIG
+
+The following problem happens to several people, especially in Ubuntu 16.04. The
+OOT compiles fine but the following error appears when running the flowgraph:
+
+```
+self.outernet_swap_ff_1 = outernet.swap_ff()
+AttributeError: 'module' object has no attribute 'swap_ff'
+```
+
+The problem is that if SWIG is not installed, compilation will complain but it
+will not stop. This produces an OOT module which does not work. The solution is
+to install SWIG:
+
+```
+sudo apt install swig swig3.0
+
+```
+
+Then compile and install again.
+
+This problem is not specific to this OOT module. It will happen with any GNU
+Radio OOT module which uses C++ blocks (most of them do), as SWIG is needed to
+access the C++ code from within the Python flowgraph.
