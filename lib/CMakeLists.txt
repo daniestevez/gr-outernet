@@ -24,10 +24,8 @@ include(GrPlatform) #define LIB_SUFFIX
 
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
-
 list(APPEND outernet_sources
     descrambler308_impl.cc
-    swap_ff_impl.cc
     invert_bit_impl.cc
 )
 
