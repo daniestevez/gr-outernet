@@ -35,8 +35,8 @@ The flowgraph needs [gr-kiss](https://github.com/daniestevez/gr-kiss/).
 
 ## Sample IQ recording
 
-For testing, you can use a [sample IQ recording by Scott K4KDR]
-(https://drive.google.com/file/d/0B2pPGQkeEAfdRjV0a1IyNTBIalk/view?usp=sharing&resourcekey=0-RhzS-xzPYCZcScjKrYlnxA)
+For testing, you can use a
+[sample IQ recording by Scott K4KDR](https://drive.google.com/file/d/0B2pPGQkeEAfdRjV0a1IyNTBIalk/view?usp=sharing&resourcekey=0-RhzS-xzPYCZcScjKrYlnxA)
 You should open it with the flowgraph `examples/outernet-recording-example.grc`
 
 ## Note about SWIG
